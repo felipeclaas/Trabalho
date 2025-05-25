@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Página Inicial</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="img/logo.png">
+    <link rel="icon" href="img/icon.png">
+    <style>
+        button{
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="nav-logo">Portfólio Individual - Felipe Claas Pimentel</div>
+            <div><img class="nav-logo" src="img/logo.png" alt="Logo"></div>
             <ul class="nav-links">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
@@ -20,11 +26,20 @@
         </nav>
     </header>
     <main>
-        <h1>Bem-vindo ao meu portfólio!</h1>
-        <p>Explore meus projetos, conheça mais sobre mim e entre em contato.</p>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <article>
+            <h1>Bem-vindo ao meu portfólio!</h1>
+            <div style="display: flex; gap: 50px">
+                <div>
+                    <p>Me chamo Felipe Claas Pimentel e aqui falo um pouco sobre mim, os meus objetivos, meus hobbies, entre outras coisas. Este site funciona como um espaço digital para mim, onde compartilho quem eu sou e como foi a minha trajetória. Você pode navegar entre as páginas através dos links no cabeçalho ou utilizar os botões abaixo:</p><br>
+                    <div style="display: flex; gap: 5px">
+                        <button><a href="sobre.html">Sobre</a></button>
+                        <button><a href="hobbies.html">Hobbies</a></button>
+                        <button><a href="contato.html">Contato</a></button>
+                    </div>
+                </div>
+                <img src="img/logo.png" alt="Logo" height="300em" width="630em">
+            </div>
+        </article>
     </main>
     <footer>Desenvolvido por Felipe Claas Pimentel</footer>
 </body>

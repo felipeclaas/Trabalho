@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     background-color: #121212;
     color: rgba(255, 255, 255, 0.795);
@@ -20,9 +23,9 @@ nav {
 }
 
 .nav-logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
+    display: flex;
+    height: 4em;
+    width: 9em;
 }
 
 .nav-links {
@@ -31,27 +34,47 @@ nav {
     gap: 24px;
 }
 
-.nav-links li a {
+a {
     color: white;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+    font-family: "Funnel Display", sans-serif;
 }
 
-.nav-links li a:hover {
+a:hover {
     color: aquamarine;
 }
 
+button{
+    background-color: #1e1e1e;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+button:hover{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+
 main {
+    display: flex;
+    flex-direction: column;
     padding: 32px;
     text-align: justify;
+    align-items: center;
+}
+
+article{
+    margin-inline: 50px;
 }
 
 footer {
     font-style: italic;
     color: rgba(255, 255, 255, 0.4);
     background-color: #1e1e1e;
-    bottom: 0;
+    position: static;
+    margin-top: auto;
     padding: 20px 32px;
     text-align: center;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.4);
