@@ -6,6 +6,58 @@
     <title>Portfólio - Contato</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/icon.png">
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        input{
+            font-family: "Funnel Display", sans-serif;
+            background-color: transparent;
+            color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-bottom: 3px dashed #1e1e1e;
+            margin: 10px;
+            width: 100%;
+            padding: 5px;
+            box-shadow: 0 7px 5px -5px rgba(0, 0, 0, 0.4);
+            font-size: 15px;
+        }
+
+        input:focus{
+            outline: none;
+            border-color: #272727;
+            box-shadow: 0 11px 5px -5px rgba(0, 0, 0, 0.4);
+        }
+
+        textarea{
+            width: 100%;
+            min-height: 100px;
+            padding: 12px;
+            resize: vertical;
+            font-family: "Funnel Display", sans-serif;
+            background-color: transparent;
+            color: rgba(255, 255, 255, 0.8);
+            border: 3px dashed #1e1e1e;
+            border-radius: 20px;
+            margin: 10px;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+            font-size: 15px;
+        }
+
+        textarea:focus{
+            outline: none;
+            border-color: #272727;
+            box-shadow: 0 9px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        button{
+            width: 30%;
+            align-self: center;
+            font-size: large;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,8 +73,16 @@
     </header>
     <main>
         <article>
-            <h1>Contato</h1>
-            <p>Explore meus projetos, conheça mais sobre mim e entre em contato.</p>
+            <h1>Entre em Contato:</h1><br>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="msg">Mensagem:</label>
+                <textarea rows="5" cols="50" placeholder="Digite sua mensagem aqui..." required></textarea><br>
+                <button>Enviar</button>
+            </form>
         </article>
     </main>
     <footer>Desenvolvido por Felipe Claas Pimentel</footer>

@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: #121212;
-    color: rgba(255, 255, 255, 0.795);
+    color: rgba(255, 255, 255, 0.8);
     font-family: "Funnel Display", sans-serif;
 }
 
@@ -51,10 +51,14 @@ button{
     padding: 10px 20px;
     border-radius: 20px;
     border: none;
+    color: white;
 }
 
 button:hover{
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    color: aquamarine;
+    background-color: transparent;
+    outline: 3px solid #1e1e1e;
 }
 
 main {
